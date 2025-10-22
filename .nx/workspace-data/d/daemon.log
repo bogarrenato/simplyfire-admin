@@ -1,0 +1,19 @@
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.132Z - Started listening on: /private/var/folders/8f/zxflkx514xz3qbytk6lh3lg40000gn/T/f072ca5e549e27b4f706/d.sock
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.133Z - [WATCHER]: Subscribed to changes within: /Users/macbookpro/Desktop/simplyfire_admin (native)
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.136Z - Established a connection. Number of open connections: 1
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.136Z - Established a connection. Number of open connections: 2
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.137Z - Closed a connection. Number of open connections: 1
+DEBUG nx::native::db::initialize: Creating table for metadata
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.155Z - [REQUEST]: Responding to the client with an error. [RECORD_TASK_RUNS] DB transaction operation error: SqliteFailure(Error { code: Unknown, extended_code: 1 }, Some("no such table: main.task_details"))
+Error: DB transaction operation error: SqliteFailure(Error { code: Unknown, extended_code: 1 }, Some("no such table: main.task_details"))
+    at TaskHistory.recordTaskRuns (/Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/utils/task-history.js:32:37)
+    at handleRecordTaskRuns (/Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/daemon/server/handle-task-history.js:9:23)
+    at /Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/daemon/server/server.js:163:122
+    at handleResult (/Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/daemon/server/server.js:194:20)
+    at handleMessage (/Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/daemon/server/server.js:163:15)
+    at /Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/daemon/server/server.js:76:15
+    at Socket.<anonymous> (/Users/macbookpro/Desktop/simplyfire_admin/node_modules/nx/src/utils/consume-messages-from-socket.js:13:17)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+[NX v21.6.6 Daemon Server] - 2025-10-22T16:46:43.156Z - Done responding to the client null
